@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*button {
+    font-family: 'Montserrat';
+}*/
+
+html {
+    font-family: $font-primary;
+    font-size: $font-size;
+    color: $text-color;
+    background-color: $bg-color;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    color: $title-color;
+    /*line-height: 1.4;*/
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.375rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.75rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1.25rem;
+}
+
+.container {
+    max-width: 1274px;
+    padding: 0 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+::selection {
+    color: $secondary-color;
+    background-color: $title-color;
+}
+
+
+
