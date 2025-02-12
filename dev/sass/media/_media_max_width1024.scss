@@ -1,4 +1,54 @@
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024.99px) {
+    header {
+        padding: 34px 0;
+
+        >.container {
+            gap: 0;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 88px;
+            background-color: $bg-color;
+        }
+    }
+
+    .container {
+        padding: 0 25px;
+    }
+
+    .header-logo {
+        max-width: 114px;
+    }
+
+    .mobile-container {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        padding: 25px 25px 50px;
+        background-color: #0B0C0D;
+        background-image: linear-gradient(245deg, rgba(35, 114, 73, 0.55) 0%, rgba(53, 198, 107, 0.62) 51.85%);
+        transition: .5s;
+        transform: translate(0, -100%);
+        visibility: hidden;
+
+        &.show {
+            top: 88px;
+            display: block;
+            transform: translate(0, 0);
+            visibility: visible;
+        }
+    }
+
+    .menu__list {
+        flex-direction: column;
+        gap: 48px;
+        font-size: 18px;
+    }
 }
-
-

@@ -59,17 +59,19 @@ h6 {
     font-size: 1.25rem;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
     max-width: 1274px;
-    padding: 0 12px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 130px;
 }
 
 ::selection {
     color: $secondary-color;
     background-color: $title-color;
 }
-
-
-
