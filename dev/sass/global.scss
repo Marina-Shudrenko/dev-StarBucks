@@ -65,33 +65,23 @@ img {
     height: auto;
 }
 
+a {
+    &:hover {
+    color: $secondary-color;
+    }
+}
+
 .container {
-    max-width: 1274px;
+    max-width: 1281px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 12px;
 }
 
-.btn {
-
-    &.btn-outline {
-        width: 84px;
-        height: 84px;
-        border: 1px solid $primary-color;
-        border-radius: 29px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        svg {
-            height: 35px;
-        }
-    }
-}
-
 .svg-sprite {
     height: 0;
 }
+
 
 
 
