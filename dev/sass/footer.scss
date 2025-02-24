@@ -69,7 +69,6 @@
         &__link {
             font-size: 20px;
             color: #565454;
-            text-decoration: none;
         }
 
     }
@@ -89,7 +88,6 @@
             color: transparent;
             background-image: linear-gradient(245deg, #237249 0%, #35c66b 100%);
             background-clip: text;
-            text-decoration: none;
 
             &::before {
                 @include footer-decoration;
@@ -124,18 +122,3 @@
     }
 }
 
-.btn {
-    &.btn-outline {
-        width: 84px;
-        height: 84px;
-        border: 1px solid $primary-color;
-        border-radius: 29px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-         svg {
-            height: 35px;
-         }
-    }
-}

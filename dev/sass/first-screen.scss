@@ -1,0 +1,48 @@
+.banner {
+    .container {
+        display: flex;
+        gap: 24px;
+    }
+
+    &-content {
+        max-width: 574px;
+        margin-right: 155px;
+        margin-top: 79px;
+    }
+
+    h1 {
+        font-weight: 800;
+        margin-bottom: 54px;
+    }
+
+    &-description {
+        @extend h6;
+        font-weight: 400;
+        margin-bottom: 54px;
+    }
+
+    &-btn-group {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 54px;
+    }
+}
+
+.banner-statistics {
+    display: flex;
+    gap: 46px;
+    margin-bottom: 112px;
+}
+
+.banner-statistics__title {
+    font-size: 62px;
+}
+
+.banner-statistics__description {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.banner-img {
+    margin-bottom: 101px;
+}
