@@ -23,7 +23,7 @@
         z-index: 1;
 
         &::before {
-            @include footer-decoration;
+            @include template-decoration;
             width: 371px;
             height: 260px;
             background-image: url(./assets/img/decoration-footer__light-md.png);
@@ -41,7 +41,7 @@
         padding: 5px 0;
 
         &::before {
-            @include footer-decoration;
+            @include template-decoration;
             width: 1273px;
             height: 923px;
             background-image: url(./assets/img/decoration-footer__light-lg.png);
@@ -90,7 +90,7 @@
             background-clip: text;
 
             &::before {
-                @include footer-decoration;
+                @include template-decoration;
                 width: 371px;
                 height: 260px;
                 background-image: url(./assets/img/decoration-footer__light-md.png);
