@@ -1,8 +1,5 @@
 .banner {
     padding-bottom: 100px;
-    /* overflow: hidden; */
-
-
 
     .container {
         display: flex;
@@ -16,10 +13,10 @@
     }
 
     h1 {
+        font-size: min(6vw, 80px);
         font-weight: 800;
         margin-bottom: 54px;
         position: relative;
-        z-index: -1;
 
         &::after {
             @include template-decoration;
@@ -40,6 +37,7 @@
 
     &-btn-group {
         display: flex;
+        flex-wrap: wrap;
         gap: 16px;
         margin-bottom: 54px;
         position: relative;
@@ -80,7 +78,7 @@
 
         &::before {
             @include template-decoration;
-            background: url(../assets/img/decoration-banner__light-img-sm.png);
+            background: url(./assets/img/decoration-banner__light-img-sm.png);
             top: -78px;
             left: -126px;
             z-index: -2;
@@ -91,7 +89,7 @@
 
         &::after {
             @include template-decoration;
-            background: url(../assets/img/decoration-banner__light-img-md.png);
+            background: url(./assets/img/decoration-banner__light-img-md.png);
             top: calc(100% - 115px);
             left: -50px;
             z-index: -3;
@@ -100,25 +98,28 @@
             height: 676px;
         }
 
-        &__cup {
+        img {
             position: relative;
-            z-index: -2;
-
+            z-index: -1;
         }
 
         &__discount {
+            $size: 14.154vw;
+            $max-size: 184px;
+            width: $size;
+            height: $size;
+            max-width: $max-size;
+            max-height: $max-size;
             position: absolute;
-            top: 0%;
-            right: 10%;
+            top: -10px;
+            right: 43px;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
-            width: 36%;
-            height: 27%;
             background: url(./assets/img/star-discount.svg) center/contain no-repeat;
             border-radius: 50%;
-            font-size: 3.4375em;
+            font-size: min(4.231vw, 55px);
             font-weight: 500;
             color: #FFFFFF;
 
@@ -140,21 +141,16 @@
             }
         }
     }
-}
 
-.wrapper-banner-img {
-    position: relative;
-
-    &::after {
-        content: "";
+    &-line {
         position: absolute;
-        right: -243px;
-        bottom: -239px;
-        background: url(./assets/img/decoration-banner__line.svg) no-repeat;
+        bottom: -243px;
+        right: -280px;
         width: 910px;
         height: 676px;
-        z-index: -3;
+        z-index: -2;
     }
 }
+
 
 
