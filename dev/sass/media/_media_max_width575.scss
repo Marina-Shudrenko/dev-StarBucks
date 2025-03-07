@@ -1,3 +1,37 @@
 @media screen and (max-width: 575.99px) {
-    
+    .header-logo {
+        max-width: 114px;
+    }
+
+    .btn-burger {
+        width: 42px;
+    }
+
+    .banner {
+        &-line {
+            bottom: -13vw;
+            right: -5vw;
+        }
+
+        h1 {
+            font-size: min(12vw, 48px);
+        }
+
+        &-description {
+            font-size: 0.75rem;
+        }
+
+        .btn {
+            font-size: 16px;
+            padding: 17px 24px;
+        }
+
+        &-statistics__title {
+            font-size: 42px;
+        }
+
+        &-statistics__description {
+            font-size: 12px;
+        }
+    }
 }
