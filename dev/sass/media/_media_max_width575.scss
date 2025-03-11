@@ -33,5 +33,15 @@
         &-statistics__description {
             font-size: 12px;
         }
+
+        .accent-label {
+            font-size: min(9vw, 55px);
+        }
+    }
+
+    .accent-label-sm {
+        --size: 19.1vw;
+        --max-size: 78px;
+        font-size: 18px;
     }
 }

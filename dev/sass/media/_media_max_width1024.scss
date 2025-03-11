@@ -134,10 +134,11 @@
         .accent-label {
             width: 21vw;
             height: 21vw;
-            min-width: 100px;
-            min-height: 100px;
+            min-width: 92px;
+            min-height: 92px;
             right: 76px;
             top: -15px;
+            font-size: min(8vw, 55px);
         }
 
         &-line {
@@ -145,6 +146,54 @@
             right: -5vw;
             width: 100%;
             height: auto;
+        }
+    }
+
+    .accent-label-sm {
+        font-size: min(3vw, 24px);
+        top: -42px;
+        left: 167px;
+        border-radius: 26%;
+    }
+
+    .advantages {
+        margin-bottom: 68px;
+    }
+
+    .advantages-row {
+        flex-direction: column;
+        padding: 19px 42px;
+        max-width: 218px;
+
+        &::before {
+            top: -262px;
+            left: -142px;
+        }
+
+        &::after {
+            top: calc(100% - 100px);
+            left: 54px;
+        }
+    }
+
+    .advantage__img-box {
+        --size: 86px;
+        margin-bottom: 8px;
+
+        img {
+            max-width: 124px;
+            max-height: 124px;
+        }
+    }
+
+    .advantage {
+        &__title {
+            margin-bottom: 0px;
+            font-size: 1.125rem;
+        }
+
+        &__description {
+            font-size: 0.75rem;
         }
     }
 

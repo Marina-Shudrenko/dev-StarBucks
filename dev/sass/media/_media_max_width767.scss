@@ -3,4 +3,9 @@
         bottom: -11vw;
         right: -7vw;
     }
+
+    .accent-label-sm {
+        --size: 14vw;
+        font-size: min(3.5vw, 24px);
+    }
 }
