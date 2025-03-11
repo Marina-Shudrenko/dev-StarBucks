@@ -1,6 +1,73 @@
-.advantages-row{
-    background-image: linear-gradient(230deg, #fff 3.94%, #e5e5e5 64.08%, #fbfbfb 88.62%);;
-    border-radius: 46px;
+.advantages-row {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 24px;
     padding: 50px 78px 36px;
-    height: 372px; /*delete*/
+    border-radius: 46px;
+    max-width: 1029px;
+    margin: 0 auto;
+
+    &::before {
+        @include template-decoration;
+        background: url(./assets/img/decoration-advantage__accent.png);
+        top: -315px;
+        left: -291px;
+        transform: none;
+        width: 764px;
+        height: 683px;
+    }
+
+    &::after {
+        @include template-decoration;
+        background-image: url(./assets/img/decoration-advantage__light.png);
+        top: 100%;
+        left: 100%;
+        width: 516px;
+        height: 479px;
+    }
+}
+
+.accent-label-sm {
+    top: -50px;
+    left: -50px;
+}
+
+.advantage {
+    max-width: 228px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__img-box {
+        position: relative;
+        margin-bottom: 12px;
+        --size: 148px;
+        width: var(--size);
+        height: var(--size);
+        border-radius: 50%;
+        box-shadow: 0 4px 41px 0 rgba(0, 0, 0, 0.39);
+        @extend .gradient-background;
+
+        img {
+            position: absolute;
+            max-width: 220px;
+            max-height: 220px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__title {
+        margin-bottom: 4px;
+        z-index: 1;
+    }
+
+    .advantage__description {
+        color: #272A2C;
+        font-weight: 400;
+    }
 }

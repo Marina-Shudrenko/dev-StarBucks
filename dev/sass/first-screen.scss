@@ -102,44 +102,6 @@
             position: relative;
             z-index: -1;
         }
-
-        &__discount {
-            $size: 14.154vw;
-            $max-size: 184px;
-            width: $size;
-            height: $size;
-            max-width: $max-size;
-            max-height: $max-size;
-            position: absolute;
-            top: -10px;
-            right: 43px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background: url(./assets/img/star-discount.svg) center/contain no-repeat;
-            border-radius: 50%;
-            font-size: min(4.231vw, 55px);
-            font-weight: 500;
-            color: #FFFFFF;
-
-            &::before {
-                content: "";
-                width: calc(100% - 31px);
-                height: calc(100% - 31px);
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                box-shadow: -4.56px 15.52px 26.48px #143e28c2;
-                border-radius: 50%;
-                z-index: -1;
-            }
-
-            span {
-                transform: rotate(-16deg);
-            }
-        }
     }
 
     &-line {
@@ -150,7 +112,13 @@
         height: 676px;
         z-index: -2;
     }
+
+    .accent-label {
+        top: -10px;
+        right: 43px;
+
+        span {
+            transform: rotate(-16deg);
+        }
+    }
 }
-
-
-

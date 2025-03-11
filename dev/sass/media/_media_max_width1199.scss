@@ -3,6 +3,33 @@
         h1 {
             margin-bottom: 42px;
         }
+
+        .accent-label {
+            top: -27px;
+            right: 13px;
+        }
+    }
+
+    .advantages-row {
+        padding: 36px 78px;
+    }
+
+    .accent-label-sm {
+        top: -32px;
+        left: -9px;
+        --max-size: 106px;
+        font-size: 25px;
+    }
+
+    .advantage__img-box img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .advantage {
+        h3 {
+            font-size: 1.5rem;
+        }
     }
 
     .footer-nav {

@@ -118,15 +118,6 @@
             margin-right: initial;
             padding: 0px 66px;
 
-            &__discount {
-                width: 21vw;
-                height: 21vw;
-                min-width: 100px;
-                min-height: 100px;
-                right: 76px;
-                top: -15px;
-            }
-
             &::before {
                 display: none;
             }
@@ -140,14 +131,21 @@
             }
         }
 
+        .accent-label {
+            width: 21vw;
+            height: 21vw;
+            min-width: 100px;
+            min-height: 100px;
+            right: 76px;
+            top: -15px;
+        }
+
         &-line {
             bottom: -8vw;
             right: -5vw;
             width: 100%;
             height: auto;
         }
-
-
     }
 
     .footer {

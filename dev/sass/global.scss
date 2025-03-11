@@ -87,10 +87,14 @@ a {
     padding: 0 12px;
 }
 
-.gradient {
-    background-image: linear-gradient(223deg, #237249 0%, #35c66b 100%);
+.gradient-text {
+    background-image: linear-gradient(223deg, $primary-color 0%, $secondary-color 100%);
     background-clip: text;
     color: transparent;
+}
+
+.gradient-background {
+    background-image: linear-gradient(245deg, $primary-color 0%, $secondary-color 100%);
 }
 
 .svg-sprite {
@@ -183,6 +187,65 @@ a {
         svg {
             height: 35px;
         }
+    }
+}
+
+.accent-label {
+    --size: 14.154vw;
+    --max-size: 184px;
+    width: var(--size);
+    height: var(--size);
+    max-width: var(--max-size);
+    max-height: var(--max-size);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(./assets/img/star-discount.svg) center/contain no-repeat;
+    border-radius: 50%;
+    font-size: min(4.231vw, 55px);
+    font-weight: 500;
+    color: #FFFFFF;
+    text-transform: uppercase;
+
+    &::before {
+        content: "";
+        width: calc(100% - 31px);
+        height: calc(100% - 31px);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: -4.56px 15.52px 26.48px #143e28c2;
+        border-radius: 50%;
+        z-index: -1;
+    }
+}
+
+.accent-label-sm {
+    @extend .accent-label;
+    --max-size: 133px;
+    font-size: 32px;
+}
+
+
+
+.white-wrapper {
+    background-image: linear-gradient(230deg, #fff 3.94%, #e5e5e5 64.08%, #fbfbfb 88.62%);
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #121517;
+        font-weight: 500;
+    }
+
+    p {
+        color: #272A2C;
     }
 }
 
