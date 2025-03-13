@@ -10,6 +10,9 @@ $title-color: #FFFFFF;
 $bg-color: #121517;
 $bg-accent-color: #0B0C0D;
 
+$section-margin: 100px;
+$section-mobile-margin: 64px;
+
 @mixin template-decoration {
     content: "";
     position: absolute;
@@ -20,3 +23,12 @@ $bg-accent-color: #0B0C0D;
     background: center/contain no-repeat;
 }
 
+@mixin mask-right {
+    -webkit-mask: url(./assets/img/mask-right.svg);
+    mask: url(./assets/img/mask-right.svg);
+}
+
+@mixin mask-left {
+    -webkit-mask: url(./assets/img/mask-left.svg);
+    mask: url(./assets/img/mask-left.svg);
+}

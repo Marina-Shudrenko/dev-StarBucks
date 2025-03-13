@@ -1,5 +1,8 @@
 .advantages {
-    margin-bottom: 135px;
+    .accent-label-sm {
+        top: -37px;
+        left: -40px;
+    }
 }
 
 .advantages-row {
@@ -31,11 +34,6 @@
         width: 516px;
         height: 479px;
     }
-}
-
-.accent-label-sm {
-    top: -50px;
-    left: -50px;
 }
 
 .advantage {

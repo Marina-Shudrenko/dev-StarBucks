@@ -1,38 +1,34 @@
 @media screen and (max-width: 1199.99px) {
     .banner {
-        h1 {
+        .template-title {
             margin-bottom: 42px;
         }
+    }
 
-        .accent-label {
-            top: -27px;
-            right: 13px;
+
+    .advantages {
+        .accent-label-sm {
+            top: -50px;
+            left: 0px;
         }
     }
 
-    .advantages-row {
-        padding: 36px 78px;
-    }
+.advantages-row {
+    padding: 36px 78px;
+}
 
-    .accent-label-sm {
-        top: -32px;
-        left: -9px;
-        --max-size: 106px;
-        font-size: 24px;
-    }
+.advantage__img-box img {
+    max-width: 200px;
+    max-height: 200px;
+}
 
-    .advantage__img-box img {
-        max-width: 200px;
-        max-height: 200px;
+.advantage {
+    h3 {
+        font-size: 1.5rem;
     }
+}
 
-    .advantage {
-        h3 {
-            font-size: 1.5rem;
-        }
-    }
-
-    .footer-nav {
-        max-width: 670px;
-    }
+.footer-nav {
+    max-width: 670px;
+}
 }

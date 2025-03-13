@@ -4,8 +4,20 @@
         right: -7vw;
     }
 
+    .advantages {
+        .accent-label-sm {
+            top: -39px;
+            left: initial;
+            right: -28px;
+        }
+    }
+
+    .accent-label {
+        font-size: min(8vw, 55px);
+    }
+
     .accent-label-sm {
-        --size: 14vw;
-        font-size: min(3.5vw, 24px);
+        --max-size: 72px;
+        font-size: min(10vw, 18px);
     }
 }

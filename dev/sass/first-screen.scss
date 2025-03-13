@@ -1,6 +1,4 @@
 .banner {
-    padding-bottom: 100px;
-
     .container {
         display: flex;
         justify-content: space-between;
@@ -12,11 +10,9 @@
         max-width: 574px;
     }
 
-    h1 {
-        font-size: min(6vw, 80px);
-        font-weight: 800;
-        margin-bottom: 54px;
+    .template-title {
         position: relative;
+        margin-bottom: 54px;
 
         &::after {
             @include template-decoration;
@@ -29,10 +25,9 @@
         }
     }
 
-    &-description {
-        @extend h6;
-        font-weight: 400;
+    .template-description {
         margin-bottom: 54px;
+        max-width: 572px;
     }
 
     &-btn-group {

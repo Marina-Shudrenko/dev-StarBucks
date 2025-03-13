@@ -1,4 +1,16 @@
 @media screen and (max-width: 1024.99px) {
+    section {
+        margin-bottom: $section-mobile-margin;
+    }
+
+    .template-title {
+        font-size: min(9vw, 64px);
+    }
+
+    .template-description {
+        font-size: 1rem;
+    }
+
     header {
         padding: 36px 0;
 
@@ -40,6 +52,7 @@
             display: block;
             transform: translate(0, 0);
             visibility: visible;
+            z-index: 2;
         }
     }
 
@@ -54,15 +67,21 @@
     }
 
     .banner {
-        padding-bottom: 64px;
+        .accent-label {
+            top: 0px;
+            right: 82px;
+        }
+
+        img {
+            max-width: 400px;
+        }
 
         .container {
             flex-direction: column-reverse;
             align-items: center;
         }
 
-        h1 {
-            font-size: min(9vw, 64px);
+        .template-title {
             margin-bottom: 36px;
 
             &::after {
@@ -74,9 +93,8 @@
             }
         }
 
-        &-description {
+        .template-description {
             margin-bottom: 36px;
-            font-size: 1rem;
         }
 
         &-btn-group {
@@ -131,15 +149,6 @@
             }
         }
 
-        .accent-label {
-            width: 21vw;
-            height: 21vw;
-            min-width: 92px;
-            min-height: 92px;
-            right: 76px;
-            top: -15px;
-            font-size: min(8vw, 55px);
-        }
 
         &-line {
             bottom: -8vw;
@@ -149,21 +158,19 @@
         }
     }
 
-    .accent-label-sm {
-        font-size: min(3vw, 24px);
-        top: -42px;
-        left: 167px;
-        border-radius: 26%;
-    }
-
     .advantages {
-        margin-bottom: 68px;
+        .accent-label-sm {
+            top: -50px;
+            left: initial;
+            right: -25px;
+        }
     }
 
     .advantages-row {
         flex-direction: column;
         padding: 19px 42px;
         max-width: 218px;
+        border-radius: 26px;
 
         &::before {
             top: -262px;
@@ -267,5 +274,16 @@
     .footer-social__item {
         width: 32px;
         height: 32px;
+    }
+
+    .accent-label {
+        --size: 17.5vw;
+        --max-size: 123px;
+        font-size: min(10vw, 55px);
+    }
+
+    .accent-label-sm {
+        --max-size: 90px;
+        font-size: min(10vw, 27px);
     }
 }

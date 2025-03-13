@@ -1,4 +1,12 @@
 @media screen and (max-width: 575.99px) {
+    .template-title {
+        font-size: min(12vw, 48px);
+    }
+
+    .template-description {
+        font-size: 0.75rem;
+    }
+
     .header-logo {
         max-width: 114px;
     }
@@ -13,12 +21,8 @@
             right: -5vw;
         }
 
-        h1 {
-            font-size: min(12vw, 48px);
-        }
-
-        &-description {
-            font-size: 0.75rem;
+        img {
+            max-width: 271px;
         }
 
         .btn {
@@ -35,13 +39,27 @@
         }
 
         .accent-label {
-            font-size: min(9vw, 55px);
+            top: 0px;
+            right: 94px;
         }
     }
 
+    .advantages {
+        .accent-label-sm {
+            top: -31px;
+            left: initial;
+            right: -13px;
+        }
+    }
+
+    .accent-label {
+        --size: 17.5vw;
+        --max-size: 71px;
+        font-size: min(7.5vw, 55px);
+    }
+
     .accent-label-sm {
-        --size: 19.1vw;
-        --max-size: 78px;
-        font-size: 18px;
+        --max-size: 58px;
+        font-size: min(7.5vw, 18px);
     }
 }
