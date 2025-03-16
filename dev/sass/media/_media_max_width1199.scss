@@ -5,30 +5,37 @@
         }
     }
 
-
     .advantages {
+        &-row {
+            padding: 36px 78px;
+        }
+
         .accent-label-sm {
             top: -50px;
             left: 0px;
         }
     }
 
-.advantages-row {
-    padding: 36px 78px;
-}
-
-.advantage__img-box img {
-    max-width: 200px;
-    max-height: 200px;
-}
-
-.advantage {
-    h3 {
-        font-size: 1.5rem;
+    .advantage__img-box {
+        img {
+            max-width: 200px;
+            max-height: 200px;
+        }
     }
-}
 
-.footer-nav {
-    max-width: 670px;
-}
+    .advantage {
+        h3 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .we-make {
+        .accent-label-md {
+            font-size: 32px;
+        }
+    }
+
+    .footer-nav {
+        max-width: 670px;
+    }
 }

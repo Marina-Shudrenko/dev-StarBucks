@@ -14,10 +14,6 @@
         margin-bottom: 79px;
     }
 
-    &-contacts {
-        align-items: center;
-    }
-
     &__logo {
         position: relative;
         z-index: 1;
@@ -39,47 +35,50 @@
         width: 100%;
         margin: 0 auto;
         padding: 5px 0;
-
+        
         &::before {
             @include template-decoration;
             width: 1273px;
             height: 923px;
             background-image: url(./assets/img/decoration-footer__light-lg.png);
         }
-
+        
         &__column {
             padding: 0 12px;
         }
-
+        
         &__title {
             margin-bottom: 12px;
             font-weight: 400;
             font-size: 20px;
             color: #BBB3B3;
         }
-
+        
         &__item {
             margin-bottom: 11px;
-
+            
             &:last-child {
                 margin-bottom: 0;
             }
         }
-
+        
         &__link {
             font-size: 20px;
             color: #565454;
         }
-
     }
-
+    
+    &-contacts {
+        align-items: center;
+    }
+    
     &-phone {
         display: flex;
         justify-content: space-between;
         max-width: 800px;
         width: 100%;
         margin-right: auto;
-
+        
         &__item {
             position: relative;
             z-index: 1;

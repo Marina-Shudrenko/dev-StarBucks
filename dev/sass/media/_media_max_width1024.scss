@@ -11,6 +11,17 @@
         font-size: 1rem;
     }
 
+    .accent-label {
+        --size: 17.5vw;
+        --max-size: 123px;
+        font-size: min(10vw, 55px);
+    }
+
+    .accent-label-sm {
+        --max-size: 90px;
+        font-size: min(10vw, 27px);
+    }
+
     header {
         padding: 36px 0;
 
@@ -164,36 +175,36 @@
             left: initial;
             right: -25px;
         }
-    }
 
-    .advantages-row {
-        flex-direction: column;
-        padding: 19px 42px;
-        max-width: 218px;
-        border-radius: 26px;
+        &-row {
+            flex-direction: column;
+            padding: 19px 42px;
+            max-width: 218px;
+            border-radius: 26px;
 
-        &::before {
-            top: -262px;
-            left: -142px;
-        }
+            &::before {
+                top: -262px;
+                left: -142px;
+            }
 
-        &::after {
-            top: calc(100% - 100px);
-            left: 54px;
-        }
-    }
-
-    .advantage__img-box {
-        --size: 86px;
-        margin-bottom: 8px;
-
-        img {
-            max-width: 124px;
-            max-height: 124px;
+            &::after {
+                top: calc(100% - 100px);
+                left: 54px;
+            }
         }
     }
 
     .advantage {
+        &__img-box {
+            --size: 86px;
+            margin-bottom: 8px;
+
+            img {
+                max-width: 124px;
+                max-height: 124px;
+            }
+        }
+
         &__title {
             margin-bottom: 0px;
             font-size: 1.125rem;
@@ -247,6 +258,19 @@
                 font-size: 15px;
             }
         }
+
+        &-phone__item {
+            font-size: 16px;
+
+            &::before {
+                content: none;
+            }
+        }
+
+        &-social__item {
+            width: 32px;
+            height: 32px;
+        }
     }
 
     .btn {
@@ -261,29 +285,5 @@
                 height: 22px;
             }
         }
-    }
-
-    .footer-phone__item {
-        font-size: 16px;
-
-        &::before {
-            content: none;
-        }
-    }
-
-    .footer-social__item {
-        width: 32px;
-        height: 32px;
-    }
-
-    .accent-label {
-        --size: 17.5vw;
-        --max-size: 123px;
-        font-size: min(10vw, 55px);
-    }
-
-    .accent-label-sm {
-        --max-size: 90px;
-        font-size: min(10vw, 27px);
     }
 }

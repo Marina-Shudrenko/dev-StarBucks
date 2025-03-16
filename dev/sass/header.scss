@@ -8,24 +8,27 @@ header {
         gap: 94px;
     }
 
+    &-logo {
+        z-index: 1;
+    }
+
     .btn-burger {
         margin-left: auto;
     }
 }
 
-.header-logo {
-    z-index: 1;
-}
 
-.menu__list {
-    display: flex;
-    gap: 94px;
-}
+.menu {
+    &__list {
+        display: flex;
+        gap: 94px;
+    }
 
-.menu__link {
-    font-size: 20px;
-    color: $text-color;
-    text-decoration: none;
+    &__link {
+        font-size: 20px;
+        color: $text-color;
+        text-decoration: none;
+    }
 }
 
 .btn-burger {

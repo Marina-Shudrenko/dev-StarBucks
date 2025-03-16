@@ -11,37 +11,37 @@
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 24px;
-    padding: 50px 78px 36px;
-    border-radius: 46px;
     max-width: 1029px;
     margin: 0 auto;
+    padding: 50px 78px 36px;
+    border-radius: 46px;
 
     &::before {
         @include template-decoration;
-        background: url(./assets/img/decoration-advantage__accent.png);
         top: -315px;
         left: -291px;
-        transform: none;
         width: 764px;
         height: 683px;
+        background: url(./assets/img/decoration-advantage__accent.png);
+        transform: none;
     }
 
     &::after {
         @include template-decoration;
-        background-image: url(./assets/img/decoration-advantage__light.png);
         top: 100%;
         left: 100%;
         width: 516px;
         height: 479px;
+        background-image: url(./assets/img/decoration-advantage__light.png);
     }
 }
 
 .advantage {
-    max-width: 228px;
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 228px;
+    text-align: center;
 
     &__img-box {
         position: relative;
@@ -55,21 +55,21 @@
 
         img {
             position: absolute;
-            max-width: 220px;
-            max-height: 220px;
             top: 50%;
             left: 50%;
+            max-width: 220px;
+            max-height: 220px;
             transform: translate(-50%, -50%);
         }
     }
 
     &__title {
-        margin-bottom: 4px;
         z-index: 1;
+        margin-bottom: 4px;
     }
 
     .advantage__description {
-        color: #272A2C;
         font-weight: 400;
+        color: #272A2C;
     }
 }

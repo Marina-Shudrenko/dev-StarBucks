@@ -16,6 +16,7 @@ html {
     color: $text-color;
     background-color: $bg-color;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -67,22 +68,6 @@ h6 {
     line-height: 1.63;
 }
 
-section {
-    margin-bottom: $section-margin;
-}
-
-.template-title {
-    font-size: min(6vw, 80px);
-    font-weight: 800;
-}
-
-.template-description {
-    @extend h6;
-    font-weight: 400;
-    color: $text-color;
-    max-width: 480px;
-}
-
 img {
     max-width: 100%;
     height: auto;
@@ -96,11 +81,52 @@ a {
     }
 }
 
+button {
+    cursor: pointer;
+}
+
+section {
+    margin-bottom: $section-margin;
+}
+
 .container {
     max-width: 1281px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 12px;
+}
+
+.white-wrapper {
+    background-image: linear-gradient(230deg, #fff 3.94%, #e5e5e5 64.08%, #fbfbfb 88.62%);
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #121517;
+        font-weight: 500;
+    }
+
+    p {
+        color: #272A2C;
+    }
+}
+
+.template-title {
+    font-size: min(6vw, 80px);
+    font-weight: 800;
+    letter-spacing: -2.4px;
+
+}
+
+.template-description {
+    @extend h6;
+    font-weight: 400;
+    color: $text-color;
+    max-width: 480px;
+    letter-spacing: -0.4px;
 }
 
 .gradient-text {
@@ -118,7 +144,7 @@ a {
 }
 
 .btn {
-    display: inline-block;
+    display: inline-flex;
     font-size: 24px;
     text-align: center;
     position: relative;
@@ -137,6 +163,11 @@ a {
             transition: 0.3s;
             opacity: 0.4;
         }
+    }
+
+    svg {
+        width: 29px;
+        height: 28px;
     }
 
     &-primary {
@@ -246,23 +277,18 @@ a {
     font-size: 32px;
 }
 
-.white-wrapper {
-    background-image: linear-gradient(230deg, #fff 3.94%, #e5e5e5 64.08%, #fbfbfb 88.62%);
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        color: #121517;
-        font-weight: 500;
-    }
-
-    p {
-        color: #272A2C;
-    }
+.accent-label-md {
+    @extend .accent-label;
+    --max-size: 142px;
+    font-size: 38px;
 }
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+
+
 
 
 

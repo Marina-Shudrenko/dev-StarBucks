@@ -1,55 +1,69 @@
 .we-make {
     .container {
+        position: relative;
         display: flex;
         justify-content: space-between;
         gap: 24px;
-        position: relative;
     }
 
     &__img-box {
-        max-width: 465px;
         position: relative;
+        max-width: 465px;
 
         img {
-            @include mask-right;
+            @include mask-top-right;
         }
 
         &::before {
             content: "";
             position: absolute;
             top: 36px;
+            z-index: -1;
             right: 45px;
             width: 100%;
             height: 100%;
-            z-index: -1;
-            background: url(./assets/img/mask-right.svg) no-repeat;
+            background: url(./assets/img/mask-top-right.svg) no-repeat;
         }
 
-        .accent-label-sm {
-            top: 40px;
+        .accent-label-md {
+            top: 12px;
             left: initial;
-            right: 24px;
+            right: -4px;
         }
     }
 
     &__content-box {
-        max-width: 475px;
+        max-width: 457px;
+        width: 100%;
 
-        .template-title {
-            margin-bottom: 63px;
-        }
-
-        .template-description {
-            margin-bottom: 63px;
-        }
+    .template-title {
+        margin-bottom: 63px;
     }
 
-    &__line {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 993px;
-        height: 999px;
-        display: none;
+    .template-description {
+        margin-bottom: 63px;
     }
+}
+
+&__process {
+    @include mask-bottom-right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 275px;
+    background: url(./assets/img/we-make__cooking.png) center/cover no-repeat;
+}
+
+.btn-primary {
+    padding: 23px 46px;
+}
+
+&__line {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 993px;
+    height: 999px;
+    display: none;
+}
 }

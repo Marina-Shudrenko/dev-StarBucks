@@ -1,0 +1,54 @@
+.overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: #23724942;
+    backdrop-filter: blur(2px);
+    width: 0;
+    height: 0;
+    transition: 0.3s;
+
+    &.show {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    max-width: 1000px;
+    width: 100%;
+    min-height: 200px;
+    background-color: #35C66B;
+    border-radius: 30px;
+    padding: 50px 50px 20px;
+    font-size: 32px;
+    text-align: justify;
+    visibility: hidden;
+    transition: .5s;
+    opacity: 0;
+    
+        &-content {
+            margin-bottom: 30px;
+        }
+    
+        button {
+            padding: 10px 30px;
+            font-size: 32px;
+            border: none;
+            border-radius: 20px;
+            color: #35C66B;
+            font-weight: 600;
+        }
+
+    &.show {
+        visibility: visible;
+        opacity: 1;
+    }
+}

@@ -7,6 +7,17 @@
         font-size: 0.75rem;
     }
 
+    .accent-label {
+        --size: 17.5vw;
+        --max-size: 71px;
+        font-size: min(7.5vw, 55px);
+    }
+
+    .accent-label-sm {
+        --max-size: 58px;
+        font-size: min(7.5vw, 18px);
+    }
+
     .header-logo {
         max-width: 114px;
     }
@@ -50,16 +61,5 @@
             left: initial;
             right: -13px;
         }
-    }
-
-    .accent-label {
-        --size: 17.5vw;
-        --max-size: 71px;
-        font-size: min(7.5vw, 55px);
-    }
-
-    .accent-label-sm {
-        --max-size: 58px;
-        font-size: min(7.5vw, 18px);
     }
 }

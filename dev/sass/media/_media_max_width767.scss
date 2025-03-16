@@ -1,4 +1,13 @@
 @media screen and (max-width: 767.99px) {
+    .accent-label {
+        font-size: min(8vw, 55px);
+    }
+
+    .accent-label-sm {
+        --max-size: 72px;
+        font-size: min(10vw, 18px);
+    }
+
     .banner-line {
         bottom: -11vw;
         right: -7vw;
@@ -10,14 +19,5 @@
             left: initial;
             right: -28px;
         }
-    }
-
-    .accent-label {
-        font-size: min(8vw, 55px);
-    }
-
-    .accent-label-sm {
-        --max-size: 72px;
-        font-size: min(10vw, 18px);
     }
 }

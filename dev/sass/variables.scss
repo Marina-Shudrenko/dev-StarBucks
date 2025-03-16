@@ -23,12 +23,17 @@ $section-mobile-margin: 64px;
     background: center/contain no-repeat;
 }
 
-@mixin mask-right {
-    -webkit-mask: url(./assets/img/mask-right.svg);
-    mask: url(./assets/img/mask-right.svg);
+@mixin mask-top-right {
+    -webkit-mask: url(./assets/img/mask-top-right.svg) no-repeat;
+    mask: url(./assets/img/mask-top-right.svg) no-repeat;
 }
 
-@mixin mask-left {
-    -webkit-mask: url(./assets/img/mask-left.svg);
-    mask: url(./assets/img/mask-left.svg);
+@mixin mask-top-left {
+    -webkit-mask: url(./assets/img/mask-top-left.svg) no-repeat;
+    mask: url(./assets/img/mask-top-left.svg) no-repeat;
+}
+
+@mixin mask-bottom-right {
+    -webkit-mask: url(./assets/img/mask-bottom-right.svg) no-repeat;
+    mask: url(./assets/img/mask-bottom-right.svg) no-repeat;
 }
