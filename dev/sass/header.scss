@@ -3,13 +3,10 @@ header {
     padding: 48px 0;
 
     >.container {
+        --gap: 94px;
         display: flex;
         align-items: center;
-        gap: 94px;
-    }
-
-    &-logo {
-        z-index: 1;
+        gap: var(--gap);
     }
 
     .btn-burger {
@@ -17,11 +14,31 @@ header {
     }
 }
 
+.header-logo {
+    img {
+        max-width: 195px;
+        min-height: 41px;
+    }
+}
+
+.mobile-container {
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+    width: 100%;
+
+    .btn {
+        margin-left: auto;
+        padding: 10px 20px;
+        font-size: 20px;
+        border: none;
+    }
+}
 
 .menu {
     &__list {
         display: flex;
-        gap: 94px;
+        gap: var(--gap);
     }
 
     &__link {

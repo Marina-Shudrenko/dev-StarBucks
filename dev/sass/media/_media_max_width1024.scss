@@ -42,7 +42,10 @@
     }
 
     .header-logo {
-        max-width: 154px;
+        img {
+            max-width: 114px;
+            min-height: 24px;
+        }
     }
 
     .mobile-container {
@@ -56,11 +59,16 @@
         transition: .5s;
         transform: translate(0, -100%);
         visibility: hidden;
-        z-index: 1;
+        flex-direction: column;
+        --gap: 40px;
+
+        .btn {
+            margin-left: initial;
+            font-size: 14px;
+        }
 
         &.show {
-            top: 76px;
-            display: block;
+            top: 89px;
             transform: translate(0, 0);
             visibility: visible;
             z-index: 2;
