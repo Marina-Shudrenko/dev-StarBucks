@@ -25,7 +25,6 @@
     z-index: 11;
     max-width: 1000px;
     width: 100%;
-    min-height: 200px;
     background-color: #35C66B;
     border-radius: 30px;
     padding: 100px 50px;
@@ -35,8 +34,21 @@
     transition: .5s;
     opacity: 0;
 
+    .template-title {
+        margin-bottom: 20px;
+    }
+
     &-content {
         margin-bottom: 30px;
+
+        video {
+            width: 100%;
+        }
+
+        .btn-primary {
+            border: 3px solid $title-color;
+            color: $title-color;
+        }
     }
 
     button {
@@ -58,9 +70,20 @@
         }
     }
 
-
     &.show {
         visibility: visible;
         opacity: 1;
+    }
+
+    .d-flex {
+        gap: 20px;
+        align-items: center;
+    }
+
+    #html,
+    #css,
+    #js {
+        cursor: pointer;
+        margin-left: auto;
     }
 }

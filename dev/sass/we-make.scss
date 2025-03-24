@@ -36,34 +36,34 @@
         max-width: 457px;
         width: 100%;
 
-    .template-title {
-        margin-bottom: 63px;
+        .template-title {
+            margin-bottom: 63px;
+        }
+
+        .template-description {
+            margin-bottom: 63px;
+        }
     }
 
-    .template-description {
-        margin-bottom: 63px;
+    &__process {
+        @include mask-bottom-right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 275px;
+        background: url(./assets/img/we-make__cooking.png) center/cover no-repeat;
     }
-}
 
-&__process {
-    @include mask-bottom-right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 275px;
-    background: url(./assets/img/we-make__cooking.png) center/cover no-repeat;
-}
+    .btn-primary {
+        padding: 23px 46px;
+    }
 
-.btn-primary {
-    padding: 23px 46px;
-}
-
-&__line {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 993px;
-    height: 999px;
-    display: none;
-}
+    &__line {
+        position: absolute;
+        right: -100px;
+        bottom: -467px;
+        width: 993px;
+        height: 999px;
+        z-index: -2;
+    }
 }

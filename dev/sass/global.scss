@@ -13,7 +13,6 @@ html {
     color: $text-color;
     background-color: $bg-color;
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 body {
@@ -21,6 +20,10 @@ body {
     flex-direction: column;
     min-height: 100vh;
     overflow-x: hidden;
+}
+
+main {
+    overflow-x: clip;
 }
 
 h1,
@@ -88,6 +91,10 @@ section {
     margin-bottom: $section-margin;
 }
 
+.d-flex {
+    display: flex;
+}
+
 .container {
     max-width: 1281px;
     margin-left: auto;
@@ -117,7 +124,6 @@ section {
     font-size: min(6vw, 80px);
     font-weight: 800;
     letter-spacing: -2.4px;
-
 }
 
 .template-description {

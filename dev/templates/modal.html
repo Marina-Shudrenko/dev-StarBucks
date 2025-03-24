@@ -1,24 +1,44 @@
 <div id="feedback" class="modal">
     <button class="btn btn-secondary" data-close-modal>X</button>
-    <h2>Feedback</h2>
+    <h2 class="template-title">Feedback</h2>
     <div class="modal-content">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt neque reiciendis, inventore incidunt quod unde ipsam aperiam, similique excepturi quo iste culpa placeat! Nulla, ea. Fugiat cum mollitia porro qui?
     </div>
     <button class="btn btn-primary" type="button" data-close-modal>Close</button>
 </div>
 
-<div id="process" class="modal">
+<div id="process" class="modal video-process">
     <button class="btn btn-secondary" data-close-modal>X</button>
-    <h2>Process</h2>
+    <h2 class="template-title">Process</h2>
     <div class="modal-content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsa, laborum nostrum mollitia debitis voluptas suscipit culpa earum ducimus voluptatem. Architecto, eveniet qui enim illo debitis saepe voluptates incidunt necessitatibus!
+        <video id="video" src="../assets/img/HTML, CSS and JavaScript.mp4" controls></video>
+        <div class="d-flex">
+            <button id="play" class="btn btn-primary">
+                <svg>
+                    <use href="#icon-triangle"></use>
+                </svg>
+            </button>
+            <button id="pause" class="btn btn-primary">
+                <svg>
+                    <use href="#icon-pause"></use>
+                </svg>
+            </button>
+            <button id="stop" class="btn btn-primary">
+                <svg>
+                    <use href="#icon-stop"></use>
+                </svg>
+            </button>
+            <h4 id="html">HTML</h4>
+            <h4 id="css">CSS</h4>
+            <h4 id="js">JS</h4>
+        </div>
     </div>
     <button class="btn btn-primary" type="button" data-close-modal>Close</button>
 </div>
 
 <div id="about" class="modal">
     <button class="btn btn-secondary" data-close-modal>X</button>
-    <h2>About us</h2>
+    <h2 class="template-title">About us</h2>
     <div class="modal-content">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto labore debitis molestiae omnis unde cumque corrupti porro! Minus nam quis neque vero vel asperiores deserunt expedita nobis, alias eum doloremque.
     </div>
