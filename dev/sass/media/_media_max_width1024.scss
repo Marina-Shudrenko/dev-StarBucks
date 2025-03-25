@@ -22,6 +22,11 @@
         font-size: min(10vw, 27px);
     }
 
+    .accent-label-md {
+        --max-size: 120px;
+        font-size: min(10vw, 32px);
+    }
+
     header {
         padding: 36px 0;
 
@@ -230,14 +235,94 @@
         }
 
         &__img-box {
-            max-width: 163px;
             right: -18px;
             margin-bottom: 60px;
+            max-width: 300px;
 
             &::before {
                 top: 12px;
                 right: 15px;
             }
+
+            .accent-label-md {
+                top: 20px;
+                right: -330px;
+            }
+        }
+
+        &__content-box {
+            .template-title {
+                margin-bottom: 35px;
+            }
+
+            .template-description {
+                margin-bottom: 38px;
+                font-size: 1.125rem;
+                letter-spacing: 0.6px;
+            }
+        }
+
+        &__process {
+            min-height: 200px;
+            max-width: 322px;
+        }
+
+        .btn-primary {
+            padding: 14px 29px;
+            gap: 12px;
+            font-size: 14px;
+            align-items: center;
+
+            svg {
+                width: 17px;
+                height: 22px;
+            }
+        }
+
+        &__line {
+            display: none;
+        }
+
+        &__line-mobile {
+            display: block;
+            position: absolute;
+            top: -190px;
+            right: -67px;
+            min-width: 475px;
+            z-index: -2;
+        }
+    }
+
+    .modal {
+        padding: 20px 20px;
+
+        .btn-secondary {
+            right: 10px;
+            top: 17px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 20px;
+        }
+
+        .template-title {
+            font-size: min(9vw, 38px);
+            font-weight: 600;
+        }
+
+        video {
+            margin-bottom: 20px;
+        }
+
+        svg {
+            width: 26px;
+            height: 24px;
+        }
+
+        h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
         }
     }
 

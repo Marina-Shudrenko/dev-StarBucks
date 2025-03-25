@@ -8,6 +8,11 @@
         font-size: min(10vw, 18px);
     }
 
+    .accent-label-md {
+        --max-size: 72px;
+        font-size: min(10vw, 18px);
+    }
+
     .banner-line {
         bottom: -11vw;
         right: -7vw;
@@ -18,6 +23,18 @@
             top: -39px;
             left: initial;
             right: -28px;
+        }
+    }
+
+    .we-make {
+        .accent-label-md {
+            top: 89px;
+            right: -139px;
+        }
+
+        &__line-mobile {
+            top: -74px;
+            right: -67px;
         }
     }
 }

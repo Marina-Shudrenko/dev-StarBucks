@@ -18,6 +18,11 @@
         font-size: min(7.5vw, 18px);
     }
 
+    .accent-label-md {
+        --max-size: 58px;
+        font-size: min(7.5vw, 18px);
+    }
+
     .header-logo {
         max-width: 114px;
     }
@@ -60,6 +65,45 @@
             top: -31px;
             left: initial;
             right: -13px;
+        }
+    }
+
+    .we-make {
+        &__img-box {
+            max-width: 163px;
+
+            .accent-label-md {
+                top: 88px;
+                right: -134px;
+            }
+        }
+
+        &__content-box {
+            .template-description {
+                font-size: 0.875rem;
+            }
+        }
+
+        &__process {
+            min-height: 163px;
+            max-width: 255px;
+        }
+
+        .btn-primary {
+            padding: 14px 29px;
+            gap: 12px;
+            font-size: 14px;
+            align-items: center;
+
+            svg {
+                width: 17px;
+                height: 22px;
+            }
+        }
+
+        &__line-mobile {
+            top: -45px;
+            right: -26px;
         }
     }
 }

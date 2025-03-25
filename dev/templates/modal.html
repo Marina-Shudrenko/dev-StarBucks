@@ -11,26 +11,30 @@
     <button class="btn btn-secondary" data-close-modal>X</button>
     <h2 class="template-title">Process</h2>
     <div class="modal-content">
-        <video id="video" src="../assets/img/HTML, CSS and JavaScript.mp4" controls></video>
+        <video id="video" src="./assets/img/HTML, CSS and JavaScript.mp4" controls></video>
         <div class="d-flex">
-            <button id="play" class="btn btn-primary">
-                <svg>
-                    <use href="#icon-triangle"></use>
-                </svg>
-            </button>
-            <button id="pause" class="btn btn-primary">
-                <svg>
-                    <use href="#icon-pause"></use>
-                </svg>
-            </button>
-            <button id="stop" class="btn btn-primary">
-                <svg>
-                    <use href="#icon-stop"></use>
-                </svg>
-            </button>
-            <h4 id="html">HTML</h4>
-            <h4 id="css">CSS</h4>
-            <h4 id="js">JS</h4>
+            <div class="modal-button">
+                <button id="play" class="btn btn-primary">
+                    <svg>
+                        <use href="#icon-triangle"></use>
+                    </svg>
+                </button>
+                <button id="pause" class="btn btn-primary">
+                    <svg>
+                        <use href="#icon-pause"></use>
+                    </svg>
+                </button>
+                <button id="stop" class="btn btn-primary">
+                    <svg>
+                        <use href="#icon-stop"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-description">
+                <h4 id="html">HTML</h4>
+                <h4 id="css">CSS</h4>
+                <h4 id="js">JS</h4>
+            </div>
         </div>
     </div>
     <button class="btn btn-primary" type="button" data-close-modal>Close</button>
