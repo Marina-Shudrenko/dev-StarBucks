@@ -23,19 +23,20 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 11;
-    max-width: 1000px;
+    max-width: 500px;
     width: 100%;
     background-color: #35C66B;
     border-radius: 30px;
-    padding: 100px 50px;
-    font-size: 32px;
+    padding: 10px 10px;
     text-align: justify;
     visibility: hidden;
     transition: .5s;
     opacity: 0;
 
-    .template-title {
-        margin-bottom: 20px;
+    .process__title {
+        margin-bottom: 5px;
+        font-size: 20px;
+        color: $title-color;
     }
 
     &-content {
@@ -52,8 +53,8 @@
     }
 
     button {
-        padding: 10px 30px;
-        font-size: 32px;
+        padding: 3px 15px;
+        font-size: 16px;
         border: none;
         border-radius: 20px;
         color: #35C66B;
@@ -63,7 +64,7 @@
     .btn-secondary {
         position: absolute;
         right: 25px;
-        top: 25px;
+        top: 7px;
 
         &:hover {
             color: $title-color;
@@ -89,5 +90,6 @@
     #js {
         cursor: pointer;
         margin-left: auto;
+        border-radius: 0px;
     }
 }

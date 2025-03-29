@@ -40,8 +40,6 @@ stop.addEventListener('click', () => {
     stopVideo();
 })
 
-
-
 //currentTime : html, css, js
 
 const html = document.querySelector('#html');
@@ -71,8 +69,6 @@ css.addEventListener('click', () => {
 js.addEventListener('click', () => {
     timeJS();
 })
-
-
 
 // modal 
 
@@ -116,6 +112,19 @@ modalTriggers.forEach(item => {
 modalClose.forEach(close => {
     close.addEventListener('click', closeModal);
 })
+
+//swiper
+
+const swiper = new Swiper('.swiper', {
+    spaceBetween: 48,
+    slidesPerView: 4,
+    loop: true,
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
 
 
 

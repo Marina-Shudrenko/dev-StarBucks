@@ -12,7 +12,6 @@
 
     .template-title {
         position: relative;
-        margin-bottom: 54px;
 
         &::after {
             @include template-decoration;
@@ -27,7 +26,6 @@
 
     .template-description {
         max-width: 572px;
-        margin-bottom: 54px;
     }
 
     &-btn-group {

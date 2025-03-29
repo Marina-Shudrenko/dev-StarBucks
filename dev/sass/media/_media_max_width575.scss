@@ -79,6 +79,10 @@
         }
 
         &__content-box {
+            &::before {
+                top: 87px;
+            }
+
             .template-description {
                 font-size: 0.875rem;
             }

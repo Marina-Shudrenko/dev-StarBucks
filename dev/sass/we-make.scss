@@ -9,10 +9,7 @@
     &__img-box {
         position: relative;
         max-width: 465px;
-
-        img {
-            @include mask-top-right;
-        }
+        margin-left: 53px;
 
         &::before {
             content: "";
@@ -27,6 +24,20 @@
             background: url(./assets/img/mask-top-right.svg) center/contain no-repeat;
         }
 
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -252px;
+            left: -288px;
+            width: 581px;
+            height: 537px;
+            background: url(./assets/img/decoration-we-make__light-img.png) no-repeat;
+        }
+
+        img {
+            @include mask-top-right;
+        }
+
         .accent-label-md {
             top: 12px;
             left: initial;
@@ -37,13 +48,16 @@
     &__content-box {
         max-width: 457px;
         width: 100%;
+        position: relative;
 
-        .template-title {
-            margin-bottom: 63px;
-        }
-
-        .template-description {
-            margin-bottom: 63px;
+        &::before {
+            content: "";
+            position: absolute;
+            top: -73px;
+            right: -162px;
+            width: 600px;
+            height: 537px;
+            background: url(./assets/img/decoration-we-make__light-title.png) no-repeat;
         }
     }
 

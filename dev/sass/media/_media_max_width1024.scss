@@ -236,7 +236,7 @@
 
         &__img-box {
             right: -18px;
-            margin-bottom: 60px;
+            margin: 0px 0px 60px;
             max-width: 300px;
 
             &::before {
@@ -244,13 +244,26 @@
                 right: 15px;
             }
 
+            &::after {
+                bottom: -107px;
+                left: -57px;
+            }
+
             .accent-label-md {
-                top: 20px;
+                top: 124px;
                 right: -330px;
             }
         }
 
         &__content-box {
+            &::before {
+                top: 145px;
+                right: 142px;
+                width: 163px;
+                height: 160px;
+                background: url(./assets/img/decoration-we-make__light-description-mobile.png) no-repeat;
+            }
+
             .template-title {
                 margin-bottom: 35px;
             }
@@ -286,7 +299,7 @@
         &__line-mobile {
             display: block;
             position: absolute;
-            top: -190px;
+            top: -96px;
             right: -67px;
             min-width: 475px;
             z-index: -2;
@@ -302,7 +315,7 @@
         }
 
         button {
-            padding: 10px 20px;
+            padding: 0px 20px;
             font-size: 20px;
         }
 
