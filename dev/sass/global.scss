@@ -228,6 +228,7 @@ section {
         justify-content: center;
         align-items: center;
         z-index: 1;
+        background: transparent;
 
         &:hover {
             &::after {
@@ -292,6 +293,16 @@ section {
 
 .overflow-hidden {
     overflow: hidden;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+.swiper-button-prev {
+    transform: rotate(-90deg);
 }
 
 

@@ -27,6 +27,18 @@
     }
 }
 
+.carousel-wrapper {
+    position: relative;
+
+    .swiper-button-prev {
+        left: -120px;
+    }
+
+    .swiper-button-next {
+        right: -120px;
+    }
+}
+
 .swiper-slide-active {
     .product {
         position: relative;
@@ -70,6 +82,7 @@
     border-radius: 29px;
     padding: 54px 30px 32px;
     text-align: center;
+    max-width: 277px;
 
     &__img {
         position: relative;
@@ -125,3 +138,5 @@
         font-size: 17px;
     }
 }
+
+

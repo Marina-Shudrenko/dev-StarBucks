@@ -339,6 +339,31 @@
         }
     }
 
+    .products__content-box {
+        gap: 36px;
+        align-items: flex-start;
+        flex-direction: column;
+
+        .template-title {
+            margin: 0px;
+        }
+
+        .template-description {
+            font-size: 1.125rem;
+            margin-bottom: 42px;
+        }
+    }
+
+    .carousel-wrapper {
+        .swiper-button-prev {
+            left: -84px;
+        }
+
+        .swiper-button-next {
+            right: -84px;
+        }
+    }
+
     .footer {
         padding: 21px 0;
 
