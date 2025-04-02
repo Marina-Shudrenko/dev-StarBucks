@@ -364,6 +364,24 @@
         }
     }
 
+    .events-wrapper {
+        &::before {
+            content: none;
+        }
+
+        &::after {
+            content: none;
+        }
+    }
+
+    .event_area-1,
+    .event_area-4 {
+        &::before {
+            content: none;
+        }
+    }
+
+
     .footer {
         padding: 21px 0;
 

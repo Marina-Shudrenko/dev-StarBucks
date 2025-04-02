@@ -113,9 +113,9 @@ modalClose.forEach(close => {
     close.addEventListener('click', closeModal);
 })
 
-//swiper
+//swiper1
 
-const swiper = new Swiper('.swiper', {
+const swiperProduct = new Swiper('.swiper-product', {
     slidesPerView: 1,
     spaceBetween: 36,
     loop: true,
@@ -142,6 +142,114 @@ const swiper = new Swiper('.swiper', {
 });
 
 
+//swiper mobile only
+
+let swiperEvents;
+let swiperEventsMediaQuery = window.matchMedia("(max-width: 1024px)");
+
+
+function checkedBreakpoint(swiperEventsMediaQuery) {
+    if (swiperEventsMediaQuery.matches) {
+        if (!swiperEvents) {
+            swiperEvents = new Swiper('.swiper-events', {
+                spaceBetween: 36,
+                loop: true,
+
+                navigation: {
+                    nextEl: '.swiper-events-button-next',
+                    prevEl: '.swiper-events-button-prev'
+                }
+            });
+        }
+    } else {
+        if (swiperEvents) {
+            swiperEvents.destroy(true, true);
+            swiperEvents = null;
+        }
+    }
+}
+
+checkedBreakpoint(swiperEventsMediaQuery);
+
+swiperEventsMediaQuery.addEventListener("change", checkedBreakpoint);
+
+
+
+/* swiperEvents = new Swiper('.swiper-events', {
+    navigation: {
+        nextEl: '.swiper-events-button-next',
+        prevEl: '.swiper-events-button-prev'
+    }
+});
+
+const swiperEventsMediaQuery = window.matchMedia("(max-width: 768px)");
+
+
+function checkedBreakpoint(swiperEventsMediaQuery) {
+    if (swiperEventsMediaQuery.matches) {
+       return;
+    } else {
+            swiperEvents.destroy(true, true);
+    }
+}
+
+checkedBreakpoint(swiperEventsMediaQuery);
+
+swiperEventsMediaQuery.addEventListener("change", checkedBreakpoint); */
+
+
+
+/* let swiperEvents = null;
+
+function initSwiper() {
+    if (window.innerWidth <= 768) {
+        if (!swiperEvents) {
+            swiperEvents = new Swiper(".swiper-events", {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        } else {
+            if (swiperEvents) {
+                swiperEvents.destroy(true, true);
+                swiperEvents = null;
+            }
+        }
+    }
+}
+
+initSwiper();
+window.addEventListener("resize", initSwiper); */
+
+
+/* let init = false;
+let swiperEvents;
+
+function swiperCard() {
+    if (window.innerWidth <= 768) {
+        if (!init) {
+            init = true;
+            swiperEvents = new Swiper(".swiper-events", {
+                slidesPerView: "auto",
+                centeredSlides: true,
+                spaceBetween: 32,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        }
+    } else if (init) {
+        swiperEvents.destroy(true, true);
+        swiperEvents = null;
+        init = false;
+    }
+}
+swiperCard();
+window.addEventListener("resize", swiperCard); */
 
 
 /* 1 занятие

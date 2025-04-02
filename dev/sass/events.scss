@@ -14,22 +14,50 @@
     .template-description {
         min-width: 457px;
     }
+
+    &-wrapper {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -85px;
+            left: 431px;
+            width: 275px;
+            height: 220px;
+            background: url(./assets/img/decoration-events__light.png) center / cover no-repeat;
+            z-index: -1;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 168px;
+            right: -120px;
+            width: 275px;
+            height: 220px;
+            background: url(./assets/img/decoration-events__light.png) center / cover no-repeat;
+            z-index: -1;
+        }
+    }
+
+    &-line {
+        position: absolute;
+        top: -233px;
+        left: -367px;
+        width: 728px;
+        height: 304px;
+        z-index: -1;
+    }
 }
 
-.events-grid {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
-}
-
-.event {
+.event-item {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
     min-height: 260px;
+    width: 100%;
     border-radius: 30px;
     padding: 44px 24px 24px;
     background-position: center;
@@ -52,22 +80,62 @@
     }
 }
 
-.event_1 {
+.event_area-1 {
     grid-area: 1 / 1 / 4 / 7;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 96px;
+        left: -179px;
+        width: 306px;
+        height: 220px;
+        background: url(./assets/img/decoration-events__light.png) center / cover no-repeat;
+        z-index: -1;
+    }
 }
 
-.event_2 {
+.event_area-2 {
     grid-area: 1 / 7 / 4 / 13;
 }
 
-.event_3 {
+.event_area-3 {
     grid-area: 4 / 1 / 7 / 5;
 }
 
-.event_4 {
+.event_area-4 {
     grid-area: 4 / 5 / 7 / 9;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 129px;
+        left: -143px;
+        width: 322px;
+        height: 227px;
+        background: url(../assets/img/decoration-events__light-white.png) center / cover no-repeat;
+        z-index: -1;
+    }
 }
 
-.event_5 {
+.event_area-5 {
     grid-area: 4 / 9 / 7 / 13;
+}
+
+.swiper-events-button-next,
+.swiper-events-button-prev {
+    position: absolute;
+    top: 50%;
+}
+
+.swiper-events-button-next {
+    right: -90px;
+    transform: rotate(90deg);
+}
+
+.swiper-events-button-prev {
+    left: -90px;
+    transform: rotate(-90deg);
 }
