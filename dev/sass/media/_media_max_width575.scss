@@ -156,4 +156,27 @@
             font-size: 12px;
         }
     }
+
+    .events {
+        .carousel-wrapper {
+            max-width: 170px;
+        }
+
+        &__content-box {
+            .template-description {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .event-item {
+        .event-title {
+            font-size: 18px;
+        }
+
+        .btn {
+            padding: 14px 30px;
+            font-size: 14px;
+        }
+    }
 }

@@ -2,13 +2,13 @@
     &__content-box {
         display: flex;
         gap: 72px;
-        flex-wrap: wrap;
         align-items: center;
+        margin-bottom: 56px;
 
         .template-title {
             position: relative;
             max-width: 392px;
-            margin-right: 72px;
+            margin-bottom: 0px;
 
             &::before {
                 content: "";
@@ -23,6 +23,7 @@
 
         .template-description {
             max-width: 444px;
+            margin-bottom: 0px;
         }
     }
 }

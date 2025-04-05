@@ -2,21 +2,24 @@
     &__content-box {
         display: flex;
         gap: 72px;
-        flex-wrap: wrap;
         flex-direction: row-reverse;
         align-items: center;
+        margin-bottom: 54px;
     }
 
     .template-title {
         max-width: 366px;
+        margin-bottom: 0px;
     }
 
     .template-description {
-        min-width: 457px;
+        max-width: 457px;
+        margin-bottom: 0px;
     }
 
-    &-wrapper {
+    .carousel-wrapper {
         position: relative;
+        max-width: 1252px;
 
         &::before {
             content: "";
@@ -43,8 +46,8 @@
 
     &-line {
         position: absolute;
-        top: -233px;
-        left: -367px;
+        top: -203px;
+        left: -365px;
         width: 728px;
         height: 304px;
         z-index: -1;
@@ -56,27 +59,27 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    min-height: 260px;
+    height: 260px;
     width: 100%;
     border-radius: 30px;
     padding: 44px 24px 24px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
 
-    &-title {
-        margin-bottom: 44px;
-        font-weight: 500;
-        line-height: 1;
-    }
+.event-title {
+    margin-bottom: 44px;
+    font-weight: 500;
+    line-height: 1;
+}
 
-    &_1,
-    &_2,
-    &_3,
-    &_4 {
-        .event-title {
-            max-width: 238px;
-        }
+.event_area-1,
+.event_area-2,
+.event_area-3,
+.event_area-4 {
+    .event-title {
+        max-width: 238px;
     }
 }
 
@@ -88,7 +91,7 @@
         content: "";
         position: absolute;
         top: 96px;
-        left: -179px;
+        left: -50px;
         width: 306px;
         height: 220px;
         background: url(./assets/img/decoration-events__light.png) center / cover no-repeat;
@@ -98,6 +101,20 @@
 
 .event_area-2 {
     grid-area: 1 / 7 / 4 / 13;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 168px;
+        left: 18px;
+        width: 322px;
+        height: 227px;
+        background: url(../assets/img/decoration-events__light-white.png) center / cover no-repeat;
+        z-index: -1;
+    }
+
+
 }
 
 .event_area-3 {
@@ -111,7 +128,7 @@
     &::before {
         content: "";
         position: absolute;
-        top: 129px;
+        top: 24px;
         left: -143px;
         width: 322px;
         height: 227px;
