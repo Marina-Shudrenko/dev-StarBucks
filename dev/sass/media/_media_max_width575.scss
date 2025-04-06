@@ -179,4 +179,50 @@
             font-size: 14px;
         }
     }
+
+    .contacts {
+        &__content-box {
+            max-width: 282px;
+        }
+
+        .template-title {
+            margin-bottom: 36px;
+        }
+
+        .template-description {
+            font-size: 0.875rem;
+            margin-bottom: 28px;
+        }
+
+        address {
+            gap: 18px;
+
+            a {
+                font-size: 22px;
+            }
+        }
+
+        &__instagram {
+            max-width: 38px;
+        }
+
+        &__phone {
+            max-width: 29px;
+        }
+
+        &__img-box {
+            .contacts__line {
+                top: -44px;
+                left: -294px;
+                width: 560px;
+                height: 474px;
+                transform: rotate(27deg);
+            }
+
+            .accent-label-md {
+                top: 79px;
+                left: -85px;
+            }
+        }
+    }
 }

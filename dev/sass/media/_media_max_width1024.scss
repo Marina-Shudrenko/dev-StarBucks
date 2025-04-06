@@ -410,6 +410,47 @@
         }
     }
 
+    .contacts {
+        .container {
+            flex-direction: column-reverse;
+            gap: 60px;
+        }
+
+        &__content-box {
+            .template-description {
+                font-size: 1.125rem;
+            }
+        }
+
+        address {
+            a {
+                font-size: 26px;
+            }
+        }
+
+        &__img-box {
+            margin-right: 42px;
+            max-width: 159px;
+            margin-left: auto;
+
+            &::before {
+                top: 12px;
+                right: -15px;
+            }
+
+            .contacts__line {
+                top: -176px;
+                left: -919px;
+                width: 1131px;
+                transform: rotate(22deg);
+            }
+
+            .accent-label-md {
+                top: 104px;
+                left: -197px;
+            }
+        }
+    }
 
     .footer {
         padding: 21px 0;
