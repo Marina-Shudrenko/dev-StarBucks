@@ -1,0 +1,93 @@
+.contacts {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    &__content-box {
+        max-width: 391px;
+    }
+
+    .template-description {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -146px;
+            left: -114px;
+            z-index: -1;
+            width: 450px;
+            height: 435px;
+            background: url(./assets/img/decoration-contacts__light-description.svg) center/contain no-repeat;
+        }
+    }
+
+    address {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+
+        a {
+            font-size: 32px;
+            font-weight: 500;
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            font-size: 32px;
+            font-weight: 500;
+            color: $title-color;
+
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+
+    &__img-box {
+        position: relative;
+        margin-right: 34px;
+        max-width: 354px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 27px;
+            right: -34px;
+            width: 100%;
+            height: 100%;
+            background: url(./assets/img/mask-top-left.svg) center/contain no-repeat;
+            z-index: -1;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -65px;
+            left: -151px;
+            width: 328px;
+            height: 262px;
+            background: url(./assets/img/decoration-contacts__light-img.svg) center/contain no-repeat;
+        }
+
+        img {
+            @include mask-top-left;
+        }
+
+        .accent-label-md {
+            top: 0px;
+            left: -28px;
+        }
+
+        .contacts__line {
+            position: absolute;
+            top: 228px;
+            left: -455px;
+            width: 1058px;
+            height: 676px;
+            z-index: -2;
+        }
+    }
+}
